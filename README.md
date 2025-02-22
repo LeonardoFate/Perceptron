@@ -62,6 +62,8 @@ Después del entrenamiento, el perceptrón aprende una frontera de decisión que
 - Clase 0: Puntos rojos (por debajo de la frontera de decisión)
 - Clase 1: Puntos azules (por encima de la frontera de decisión)
 
+![Resultados](figura1.png "Imagen 1")
+
 La frontera aprendida se aproxima a la función lineal utilizada para generar los datos originales.
 
 ## Aplicaciones
