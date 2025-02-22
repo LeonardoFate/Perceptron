@@ -21,7 +21,8 @@ Para ejecutar el código:
 ```bash
 python perceptron_sigmoide.py
 ```
-El programa:
+
+## El programa:
 
 Genera 100 puntos aleatorios en un plano bidimensional
 Asigna clases basadas en su posición relativa a una línea
@@ -38,35 +39,38 @@ def sigmoidea(x):
 ```
 
 La función sigmoidea transforma cualquier valor real en un valor entre 0 y 1, permitiendo una salida continua en lugar de binaria.
-Clase PerceptronSigmoide
+
+### Clase PerceptronSigmoide
+
 Esta clase implementa:
 
-__init__(self, n_inputs): Inicializa el perceptrón con pesos aleatorios
-activar(self, entradas): Calcula la salida del perceptrón para un conjunto de entradas
-entrenar(self, entradas, salidas_esperadas, tasa_aprendizaje, iteraciones): Entrena el perceptrón usando descenso de gradiente
+- **`__init__(self, n_inputs)`**: Inicializa el perceptrón con pesos aleatorios
+- **`activar(self, entradas)`**: Calcula la salida del perceptrón para un conjunto de entradas
+- **`entrenar(self, entradas, salidas_esperadas, tasa_aprendizaje, iteraciones)`**: Entrena el perceptrón usando descenso de gradiente
 
-Visualización
-La función graficar_resultados() muestra:
+### Visualización
 
-Los puntos de entrenamiento coloreados por clase
-La frontera de decisión (línea negra)
-Regiones coloreadas que indican las zonas de clasificación
+La función `graficar_resultados()` muestra:
+- Los puntos de entrenamiento coloreados por clase
+- La frontera de decisión (línea negra)
+- Regiones coloreadas que indican las zonas de clasificación
 
-Resultados
+## Resultados
+
 Después del entrenamiento, el perceptrón aprende una frontera de decisión que separa efectivamente los puntos en dos clases:
 
-Clase 0: Puntos rojos (por debajo de la frontera de decisión)
-Clase 1: Puntos azules (por encima de la frontera de decisión)
+- Clase 0: Puntos rojos (por debajo de la frontera de decisión)
+- Clase 1: Puntos azules (por encima de la frontera de decisión)
 
 La frontera aprendida se aproxima a la función lineal utilizada para generar los datos originales.
-Aplicaciones
+
+## Aplicaciones
+
 Este tipo de perceptrón puede utilizarse para:
+- Problemas de clasificación binaria linealmente separables
+- Introducción a conceptos básicos de redes neuronales
+- Demostración visual de aprendizaje automático
 
-Problemas de clasificación binaria linealmente separables
-Introducción a conceptos básicos de redes neuronales
-Demostración visual de aprendizaje automático
+## Licencia
 
-Licencia
 Libre para uso educativo y personal.
-
-Este texto está en formato Markdown, listo para ser copiado y pegado en tu archivo README.md para GitHub.
